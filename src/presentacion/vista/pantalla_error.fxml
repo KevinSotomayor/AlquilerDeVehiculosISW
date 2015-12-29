@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="764.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaError">
+   <children>
+      <Pane fx:id="pane_main" layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="227.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR ">
+               <font>
+                  <Font name="Roboto Slab Regular" size="58.0" />
+               </font>
+            </Text>
+            <Text fill="#262b33" layoutX="437.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500">
+               <font>
+                  <Font name="Roboto Slab Thin" size="58.0" />
+               </font>
+            </Text>
+            <Button fx:id="boton_salir" layoutX="293.0" layoutY="369.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="179.0" style="-fx-background-color: #262b33;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Slab Thin" size="21.0" />
+               </font>
+            </Button>
+            <Text fill="#727272" layoutX="126.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esto es embarazoso, algo ha salido mal inesperadamente">
+               <font>
+                  <Font name="Roboto Slab Regular" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

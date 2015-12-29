@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="657.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaCrearReserva">
+   <children>
+      <Pane prefHeight="657.0" prefWidth="560.0" style="-fx-background-color: #EFEFEF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="560.0" style="-fx-background-color: #262b33;">
+               <children>
+                  <Text fill="WHITE" layoutX="198.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crear">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="273.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="reserva">
+                     <font>
+                        <Font name="Roboto Slab Thin" size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="74.0" prefHeight="562.0" prefWidth="514.0" style="-fx-background-color: #fff;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Text layoutX="24.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI DEL CLIENTE:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="dni_edittext" editable="false" focusTraversable="false" layoutX="24.0" layoutY="38.0" prefHeight="27.0" prefWidth="462.0" />
+                  <Text layoutX="24.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONAR CATEGORIA">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MODALIDAD DEL ALQUILER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONAR SUCURSAL DE RECOGIDA">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONAR SUCURSAL DE DEVOLUCIÓN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA DE RECOGIDA">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="fecha_recogida_datepicker" editable="false" focusTraversable="false" layoutX="24.0" layoutY="435.0" prefHeight="27.0" prefWidth="212.0" promptText="Fecha de obtención" />
+                  <Button layoutX="140.0" layoutY="571.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="202.0" style="-fx-background-color: #262b33;" text="GUARDAR" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <Circle fx:id="guardar_boton_shape" fill="#01b18b" layoutX="287.0" layoutY="549.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_guardar_button_shape" fitHeight="37.0" fitWidth="31.0" layoutX="271.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_done.png" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="fecha_devolucion_datepicker" editable="false" focusTraversable="false" layoutX="273.0" layoutY="435.0" prefHeight="27.0" prefWidth="212.0" promptText="Fecha de obtención" />
+                  <Text layoutX="274.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA DE DEVOLUCIÓN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="categoria_choicebox" layoutX="24.0" layoutY="110.0" prefHeight="27.0" prefWidth="462.0" />
+                  <ChoiceBox fx:id="modalidad_choicebox" layoutX="24.0" layoutY="188.0" prefHeight="27.0" prefWidth="462.0" />
+                  <ChoiceBox fx:id="suc_recogida_choicebox" layoutX="24.0" layoutY="267.0" prefHeight="27.0" prefWidth="462.0" />
+                  <ChoiceBox fx:id="suc_devolucion_choicebox" layoutX="24.0" layoutY="345.0" prefHeight="27.0" prefWidth="462.0" />
+                  <Circle fx:id="cancelar_boton_shape" fill="#f51919" layoutX="228.0" layoutY="548.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_cancelar_button_shape" fitHeight="37.0" fitWidth="31.0" layoutX="212.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_close.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="cliente_nombre_text" fill="#262b33" layoutX="150.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

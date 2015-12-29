@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="700.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaCrearCliente">
+   <children>
+      <Pane prefHeight="710.0" prefWidth="560.0" style="-fx-background-color: #EFEFEF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="560.0" style="-fx-background-color: #262b33;">
+               <children>
+                  <Text fill="WHITE" layoutX="198.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crear">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="273.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cliente">
+                     <font>
+                        <Font name="Roboto Slab Thin" size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="74.0" prefHeight="613.0" prefWidth="514.0" style="-fx-background-color: #fff;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Text layoutX="25.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="dni_edittext" focusTraversable="false" layoutX="25.0" layoutY="38.0" prefHeight="27.0" prefWidth="462.0" promptText="Ej: 24858566R" />
+                  <TextField fx:id="nombreapellidos_edittext" focusTraversable="false" layoutX="25.0" layoutY="99.0" prefHeight="27.0" prefWidth="462.0" promptText="Ej: Kevin Sotomayor Vergara" />
+                  <Text layoutX="26.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE Y APELLIDOS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="direccion_edittext" focusTraversable="false" layoutX="25.0" layoutY="159.0" prefHeight="27.0" prefWidth="462.0" promptText="Ej: Camino de Vera S/N" />
+                  <Text layoutX="25.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIRECCIÓN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="27.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POBLACIÓN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="poblacion_edittext" focusTraversable="false" layoutX="27.0" layoutY="216.0" prefHeight="27.0" prefWidth="220.0" promptText="Ej: Valencia" />
+                  <TextField fx:id="cod_postal_edittext" focusTraversable="false" layoutX="269.0" layoutY="216.0" prefHeight="27.0" prefWidth="220.0" promptText="Ej: 46022" />
+                  <Text layoutX="269.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CÓDIGO POSTAL">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="27.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARNET DE CONDUCIR">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="carnet_conducir_datepicker" editable="false" focusTraversable="false" layoutX="27.0" layoutY="274.0" prefHeight="27.0" prefWidth="220.0" promptText="Fecha de obtención" />
+                  <ImageView fitHeight="242.0" fitWidth="409.0" layoutX="57.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/tarjeta_ui.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="140.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos de tarjeta de crédito">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="140.0" layoutY="571.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="202.0" style="-fx-background-color: #262b33;" text="GUARDAR" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="num_tarjeta_edittext" focusTraversable="false" layoutX="87.0" layoutY="424.0" prefHeight="29.0" prefWidth="161.0" promptText="1111-2222-3333-4444">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cvc_tarjeta_edittext" focusTraversable="false" layoutX="369.0" layoutY="485.0" prefHeight="29.0" prefWidth="60.0" promptText="123">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font></TextField>
+                  <TextField fx:id="caduca_mes_tarjeta_edittext" focusTraversable="false" layoutX="269.0" layoutY="485.0" prefHeight="29.0" prefWidth="31.0" promptText="MM">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="caduca_anyo_tarjeta_edittext" focusTraversable="false" layoutX="304.0" layoutY="485.0" prefHeight="29.0" prefWidth="46.0" promptText="AAAA">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fx:id="maestro_img_off" fitHeight="31.0" fitWidth="57.0" layoutX="186.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/maestro_logo_off.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mastercard_img_off" fitHeight="43.0" fitWidth="55.0" layoutX="234.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/mastercard_logo_off.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="visa_img_off" fitHeight="31.0" fitWidth="49.0" layoutX="292.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/Visa_Logo_off.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="guardar_boton_shape" fill="#01b18b" layoutX="277.0" layoutY="600.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_guardar_button_shape" fitHeight="37.0" fitWidth="31.0" layoutX="261.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_done.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nombre_tarjeta_label" layoutX="89.0" layoutY="490.0" text="Ej: KEVIN SOTOMAYOR V." textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="cancelar_boton_shape" fill="#f51919" layoutX="219.0" layoutY="600.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_cancelar_boton_shape" fitHeight="37.0" fitWidth="31.0" layoutX="203.0" layoutY="585.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_close.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="maestro_img_on" fitHeight="31.0" fitWidth="57.0" layoutX="186.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../../iconos/maestro_logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mastercard_img_on" fitHeight="43.0" fitWidth="55.0" layoutX="234.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../../iconos/mastercard_logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="visa_img_on" fitHeight="41.0" fitWidth="69.0" layoutX="287.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../../iconos/logo-visa.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

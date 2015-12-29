@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="764.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaAcercaDe">
+   <children>
+      <Pane fx:id="pane_main" layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="245.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acerca">
+               <font>
+                  <Font name="Roboto Slab Regular" size="58.0" />
+               </font>
+            </Text>
+            <Text fill="#262b33" layoutX="445.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de">
+               <font>
+                  <Font name="Roboto Slab Thin" size="58.0" />
+               </font>
+            </Text>
+            <Button fx:id="boton_salir" layoutX="151.0" layoutY="415.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="466.0" style="-fx-background-color: #262b33;" text="Aceptar" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Slab Regular" size="21.0" />
+               </font>
+            </Button>
+            <Text fill="#727272" layoutX="149.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplicación de Ingeniería del software, creada por:&#10;&#10;Kevin Sotomayor V.&#10;Laura Rubio P.&#10;Paula Tolsa&#10;Patricia Ruá" wrappingWidth="466.71893310546875">
+               <font>
+                  <Font name="Roboto Slab Light" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

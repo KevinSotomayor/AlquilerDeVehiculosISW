@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorListarReservas">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="355.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista Reservas">
+               <font>
+                  <Font name="Roboto Slab Regular" size="43.0" />
+               </font>
+            </Text>
+            <Button fx:id="boton_aceptar" layoutX="335.0" layoutY="419.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="365.0" style="-fx-background-color: #262b33;" text="Aceptar" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Slab Regular" size="21.0" />
+               </font>
+            </Button>
+            <TableView fx:id="reservas" layoutX="11.0" layoutY="83.0" prefHeight="326.0" prefWidth="959.0">
+              <columns>
+                <TableColumn fx:id="id_column" minWidth="2.0" prefWidth="78.98978042602539" text="ID" />
+                <TableColumn fx:id="fechaRecogida_column" prefWidth="155.0102081298828" text="Fecha recogida" />
+                  <TableColumn fx:id="lugar_recogida_column" prefWidth="75.0" text="Lugar recogida" />
+                  <TableColumn fx:id="fechaDevolucion_column" prefWidth="132.75387573242188" text="Fecha devolucion" />
+                  <TableColumn fx:id="lugar_devolucion_column" prefWidth="108.2462158203125" text="Lugar devolución" />
+                  <TableColumn fx:id="modalidad_column" prefWidth="97.32647705078125" text="Modalidad" />
+                  <TableColumn fx:id="cliente_column" prefWidth="75.0" text="Cliente" />
+                  <TableColumn fx:id="categoria_column" prefWidth="75.0" text="Categoría" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

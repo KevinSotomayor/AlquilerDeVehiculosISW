@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="764.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaCliente">
+   <children>
+      <Pane fx:id="pane_main" layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="209.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crear">
+               <font>
+                  <Font name="Roboto Slab Regular" size="58.0" />
+               </font>
+            </Text>
+            <Text fill="#262b33" layoutX="361.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="reserva">
+               <font>
+                  <Font name="Roboto Slab Thin" size="58.0" />
+               </font>
+            </Text>
+            <Text fill="#262b33" layoutX="61.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar cliente">
+               <font>
+                  <Font name="Roboto Slab Regular" size="29.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dni_edittext" focusTraversable="false" layoutX="61.0" layoutY="280.0" prefHeight="36.0" prefWidth="622.0" promptText="Introducir dni de cliente" />
+            <Text fill="#262b33" layoutX="61.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear cliente">
+               <font>
+                  <Font name="Roboto Slab Regular" size="29.0" />
+               </font>
+            </Text>
+            <Button fx:id="boton_crearcliente" layoutX="60.0" layoutY="401.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="622.0" style="-fx-background-color: #262b33;" text="¡Empezar!" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Slab Regular" size="21.0" />
+               </font>
+            </Button>
+            <Text fill="#727272" layoutX="61.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aquí puedes crear una reserva y asociarla a un cliente.&#10;Si el cliente ya existe, por favor, introduce su DNI en la &#10;caja de búsqueda o bien crea un nuevo cliente para empezar." wrappingWidth="622.0">
+               <font>
+                  <Font name="Roboto Slab Light" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

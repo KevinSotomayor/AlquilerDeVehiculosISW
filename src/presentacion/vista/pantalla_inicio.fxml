@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="600.0" minWidth="764.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaInicio">
+   <center>
+      <Pane fx:id="pane_principal" prefHeight="576.0" prefWidth="764.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+            
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="554.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/Add%20User%20Filled-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="102.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/List-100.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="639.0" layoutX="71.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/logo_av_n.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="105.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/Find%20User%20Filled-100.png" />
+                     </image>
+                  </ImageView>
+            <Text fill="#727272" layoutX="232.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listar reservas asociadas a sucursales donde&#10;un usuario quiere recoger un vehículo, permitiendo&#10;así saber en que sitio, fecha y hora puede recoger&#10;el vehículo reservado.">
+               <font>
+                  <Font name="Roboto Slab Light" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#727272" layoutX="102.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alquiler de vehículos te permite crear clientes&#10;para poder asociarles una reserva y sucursales&#10;donde pueden recoger un vehículo.">
+               <font>
+                  <Font name="Roboto Slab Light" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#727272" layoutX="235.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asocia una reserva a un usario tan sólo buscando &#10;al cliente desde el apartado de Cliente &#10;del menú principal de la aplicación.">
+               <font>
+                  <Font name="Roboto Slab Light" size="18.0" />
+               </font>
+            </Text>
+            
+         </children></Pane>
+   </center>
+</BorderPane>

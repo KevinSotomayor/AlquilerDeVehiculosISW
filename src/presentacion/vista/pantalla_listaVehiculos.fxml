@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorListarVehiculos">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="330.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Vehículos">
+               <font>
+                  <Font name="Roboto Slab Regular" size="43.0" />
+               </font>
+            </Text>
+            <Button fx:id="boton_aceptar" layoutX="335.0" layoutY="419.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="365.0" style="-fx-background-color: #262b33;" text="Aceptar" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Slab Regular" size="21.0" />
+               </font>
+            </Button>
+            <TableView fx:id="vehiculos" layoutX="11.0" layoutY="83.0" prefHeight="326.0" prefWidth="959.0">
+              <columns>
+                <TableColumn fx:id="matricula_column" minWidth="2.0" prefWidth="78.98978042602539" text="Matrícula" />
+                <TableColumn fx:id="kms_column" prefWidth="155.0102081298828" text="KMS" />
+                  <TableColumn fx:id="categoria_column" prefWidth="75.0" text="Categoría" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

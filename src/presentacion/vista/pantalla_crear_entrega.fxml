@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="539.0" prefHeight="539.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaCrearEntrega">
+   <children>
+      <Pane prefHeight="539.0" prefWidth="560.0" style="-fx-background-color: #EFEFEF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="560.0" style="-fx-background-color: #262b33;">
+               <children>
+                  <Text fill="WHITE" layoutX="198.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crear">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="273.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="entrega">
+                     <font>
+                        <Font name="Roboto Slab Thin" size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="25.0" layoutY="74.0" prefHeight="436.0" prefWidth="514.0" style="-fx-background-color: #fff;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Text layoutX="24.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI DEL CLIENTE:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="dni_edittext" editable="false" focusTraversable="false" layoutX="24.0" layoutY="38.0" prefHeight="27.0" prefWidth="462.0" promptText="23445566T" />
+                  <Text layoutX="27.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONAR FECHA">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="fecha_datepicker" editable="false" focusTraversable="false" layoutX="27.0" layoutY="252.0" prefHeight="27.0" prefWidth="212.0" promptText="Fecha de obtención" />
+                  <Button layoutX="140.0" layoutY="571.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="202.0" style="-fx-background-color: #262b33;" text="GUARDAR" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Roboto Slab Regular" size="13.0" />
+                     </font>
+                  </Button>
+                  <Circle fx:id="guardar_boton_shape" fill="#01b18b" layoutX="287.0" layoutY="423.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_guardar_button_shape" fitHeight="37.0" fitWidth="31.0" layoutX="271.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_done.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fx:id="cancelar_boton_shape" fill="#f51919" layoutX="228.0" layoutY="422.0" radius="24.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fx:id="icon_cancelar_button_shape" fitHeight="37.0" fitWidth="31.0" layoutX="212.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../iconos/ic_close.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="cliente_nombre_text" fill="#262b33" layoutX="150.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="274.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE SEGURO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="tipo_seguro_choicebox" focusTraversable="false" layoutX="275.0" layoutY="252.0" prefHeight="27.0" prefWidth="212.0" />
+                  <Text layoutX="27.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KILÓMETROS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="kilometros_edittext" focusTraversable="false" layoutX="27.0" layoutY="331.0" prefHeight="27.0" prefWidth="212.0" promptText="12.0" />
+                  <TextField fx:id="coche_edittext" editable="false" focusTraversable="false" layoutX="26.0" layoutY="107.0" prefHeight="27.0" prefWidth="462.0" promptText="ABC2233" />
+                  <Text layoutX="26.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COCHE ASIGNADO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="combustible_edittext" focusTraversable="false" layoutX="275.0" layoutY="331.0" prefHeight="27.0" prefWidth="212.0" promptText="4.5" />
+                  <Text layoutX="275.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMBUSTIBLE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="26.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLEADO QUE REALIZA LA ENTREGA">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="empleado_realiza_edittext" focusTraversable="false" layoutX="26.0" layoutY="177.0" prefHeight="27.0" prefWidth="462.0" promptText="Identificador de empleado" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

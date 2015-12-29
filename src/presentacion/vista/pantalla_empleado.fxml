@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="764.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.controlador.ControladorPantallaEmpleado">
+   <children>
+      <Pane fx:id="pane_main" layoutY="-1.0" prefHeight="600.0" prefWidth="764.0" style="-fx-background-color: #fff; -fx-background-radius: 4;" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Text fill="#262b33" layoutX="244.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empleado">
+               <font>
+                  <Font name="Roboto Slab Regular" size="58.0" />
+               </font>
+            </Text>
+            <Text fx:id="crear_cliente" fill="#262b33" layoutX="27.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear cliente" wrappingWidth="191.99560546875">
+               <font>
+                  <Font name="Roboto Slab Regular" size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="listar_reservas" fill="#262b33" layoutX="27.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listar reservas">
+               <font>
+                  <Font name="Roboto Slab Regular" size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="large_text_cliente" fill="#727272" layoutX="27.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Haga click aquí si desea añadir un cliente a la base de datos del sistema.&#10;" wrappingWidth="711.0">
+               <font>
+                  <Font name="Roboto Slab Light" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#727272" layoutX="27.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione una de las siguientes sucursales de la que se desee obtener una lista con todas sus reservas " wrappingWidth="695.0">
+               <font>
+                  <Font name="Roboto Slab Light" size="19.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="crear_cliente_imagen" fitHeight="38.0" fitWidth="36.0" layoutX="219.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../iconos/Add%20User%20Filled-100.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tabla_sucursales" layoutX="27.0" layoutY="325.0" prefHeight="184.0" prefWidth="685.0">
+              <columns>
+                <TableColumn fx:id="columna_id_sucursales" prefWidth="95.0" text="ID" />
+                <TableColumn fx:id="columna_direccion_sucursales" prefWidth="588.0" text="Dirección Sucursal" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="boton_listar_coches" layoutX="97.0" layoutY="526.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="163.0" style="-fx-background-color: #262b33;" text="coches" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Roboto Slab Regular" size="16.0" />
+               </font></Button>
+            <Button fx:id="boton_listar_reservas" layoutX="283.0" layoutY="526.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="163.0" style="-fx-background-color: #262b33;" text="reservas" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Roboto Slab Regular" size="16.0" />
+               </font></Button>
+            <Button fx:id="boton_listar_reservas_entregas" layoutX="464.0" layoutY="526.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="204.0" style="-fx-background-color: #262b33;" text="reservas sin entrega" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Roboto Slab Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
